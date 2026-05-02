@@ -1,0 +1,119 @@
+{
+    "projects": {
+        "495A16E8-7D8F-5552-7DD3-3C284411644B": {
+            "config-debug": {
+                "additionalDependencies": [
+                    "cpu-core-debug.lib",
+                    "cpu-render-debug.lib",
+                    "cpu-engine-debug.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/cpulib/include/cpu-engine"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/cpulib/lib"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [
+                    "cpu-core.lib",
+                    "cpu-render.lib",
+                    "cpu-engine.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/cpulib/include/cpu-engine"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/cpulib/lib"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "737E78DB-2986-432F-696D-7A7963B21BDE"
+            ],
+            "dependents": [],
+            "name": "server",
+            "property-lib": false,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "49B20487-59AC-3F3F-3DB0-5A4D0C552F8E": {
+            "config-debug": {
+                "additionalDependencies": [
+                    "cpu-core-debug.lib",
+                    "cpu-render-debug.lib",
+                    "cpu-engine-debug.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/cpulib/include/cpu-engine"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/cpulib/lib"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [
+                    "cpu-core.lib",
+                    "cpu-render.lib",
+                    "cpu-engine.lib"
+                ],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/cpulib/include/cpu-engine"
+                ],
+                "additionalLibraryDirectories": [
+                    "$(SolutionDir)../lib/cpulib/lib"
+                ],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [
+                "737E78DB-2986-432F-696D-7A7963B21BDE"
+            ],
+            "dependents": [],
+            "name": "client",
+            "property-lib": false,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        },
+        "737E78DB-2986-432F-696D-7A7963B21BDE": {
+            "config-debug": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/cpulib/include/cpu-engine"
+                ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "config-release": {
+                "additionalDependencies": [],
+                "additionalIncludeDirectories": [
+                    "$(SolutionDir)../lib/cpulib/include/cpu-engine"
+                ],
+                "additionalLibraryDirectories": [],
+                "preprocessorDefinitions": []
+            },
+            "dependencies": [],
+            "dependents": [
+                "49B20487-59AC-3F3F-3DB0-5A4D0C552F8E",
+                "495A16E8-7D8F-5552-7DD3-3C284411644B"
+            ],
+            "name": "common",
+            "property-lib": true,
+            "property-pch": true,
+            "property-vcpkg": false,
+            "property-window": false
+        }
+    },
+    "projects_name_to_guid": {
+        "client": "49B20487-59AC-3F3F-3DB0-5A4D0C552F8E",
+        "common": "737E78DB-2986-432F-696D-7A7963B21BDE",
+        "server": "495A16E8-7D8F-5552-7DD3-3C284411644B"
+    },
+    "solution_guid": "46BC77C9-1C44-0FDE-3A1B-73B407AD0C66",
+    "solution_name": "networking",
+    "startup_project": "server",
+    "version": "2.0"
+}
